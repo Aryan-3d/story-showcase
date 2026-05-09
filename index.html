@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Story Showcase</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<h1 class="site-title">My Story Showcase</h1>
+		<nav class="site-nav">
+			<a href="#cover">Cover</a>
+			<a href="#story">Script</a>
+			<a href="#characters">Characters</a>
+			<a href="#music">Music</a>
+			<a href="#narration">Narration</a>
+		</nav>
+		<button id="bgMuteBtn" class="mute-btn" title="Mute background music">🔊</button>
+	</header>
+
+	<!-- Background Music -->
+	<audio id="bgMusic" loop preload="auto">
+		<source src="assets/audio/Neon Shrine Rain.mp3" type="audio/mpeg">
+	</audio>
+
+	<!-- Background Video (place your file at assets/videos/background.mp4) -->
+	<video id="bgVideo" autoplay muted loop playsinline controls>
+		<source src="assets/videos/background.mp4.mp4" type="video/mp4">
+		<!-- fallback poster or message -->
+	</video>
+
+	<main>
+		<section id="cover" class="panel cover-panel">
+			<div class="cover-inner">
+				<img src="assets/images/cover.png" alt="Story Cover" class="cover-image">
+				<div class="cover-text">
+					<h2>The Heartbeat Between the Wires</h2>
+					<p class="subtitle">A pulse. A choice. Two worlds. One heart.</p>
+					<p>An immersive story blending cyberpunk aesthetics with emotional depth. Dive into a world where technology and humanity collide in unexpected ways.</p>
+					<a href="#story" class="btn">Read the Script</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="story" class="panel story-panel">
+			<h2>Story Script</h2>
+			<article class="script">
+				<p>The smell of ozone and fried noodles hung heavy in the air of Sector 4. <strong>Neon rain</strong>—a chemical cocktail that glowed a faint, toxic violet—slicked the cracked pavement, reflecting the dizzying advertisements of the skyscraper-shadowed market. Above, the sky was a jagged ribbon of black, choked by the belly of <strong>chrome jets</strong> that drifted silently on anti-grav cushions, their engines humming a low-frequency lullaby to the teeming crowds below.</p>
+
+				<p>Kaito adjusted his neural-link dampener, trying to drown out the city's relentless static. But then, the static didn't just fade; it shattered.</p>
+
+				<h3>The Breach of Silence</h3>
+				<p>The roar of the market vanished. In its place fell a profound, impossible hush. Kaito blinked, and the oily puddles were gone, replaced by smooth, weathered stone. He stood at the threshold of a <strong>silent shrine</strong>, an island of stillness anchored in the heart of the chaos.</p>
+
+				<p>Beneath a canopy of gnarled wood, a <strong>lone samurai</strong> stood motionless. He was a relic of iron and silk, his hand resting on a hilt that had never known a battery pack. Above him, <strong>falling cherry blossoms</strong> descended in a slow-motion dance, defying the windless air.</p>
+
+				<h3>The Transformation</h3>
+				<p>As Kaito watched, a single pink petal drifted through the weathered wood of a <strong>torii gate</strong>. The moment it crossed the threshold, the organic matter sparked. The petal elongated, sprouting translucent wings and glowing antennae. It was no longer a flower, but a <strong>shimmering fairy</strong>, a darting needle of light that zipped toward the horizon.</p>
+
+				<p>Dozens followed, a blizzard of petals turning into a swarm of spirits, all fleeing the encroaching gray of the city toward a <strong>glowing forest</strong> that bled into existence behind the shrine.</p>
+
+				<h3>The Pulse of the Woods</h3>
+				<p>Kaito stepped forward, his heavy combat boots sinking into soft, bioluminescent moss. Deep within the woods, the trees parted to reveal a sight that defied the laws of the megacity. A <strong>marble castle</strong> rose from a swirling silver mist. Its spires weren't made of steel or glass, but of polished white stone that seemed to breathe.</p>
+
+				<blockquote>
+					<p>Every few seconds, the entire structure would glow with a soft, amber light—an <strong>ancient, rhythmic magic</strong> that felt like a heartbeat thrumming through the very ground.</p>
+				</blockquote>
+
+				<h3>The Flicker</h3>
+				<p>For one crystalline heartbeat, the two worlds existed in perfect, impossible alignment. Kaito could feel the cold spray of the neon rain on his left cheek and the warmth of the castle's magic on his right. The "wire" and the "wonder" held their breath, a bridge between a dying future and a forgotten dream.</p>
+
+				<p>Then, the pulse stuttered.</p>
+
+				<p>The marble spires flickered, turning into the hollow frames of unfinished construction. The fairies faded back into soggy pink litter. With a violent jolt of sensory feedback, the <strong>neon swallowed the dream</strong>. Kaito was back in the market, standing in a puddle of violet rain, while a chrome jet roared overhead, drowning out the ghost of the samurai's silence.</p>
+			</article>
+		</section>
+
+		<section id="characters" class="panel characters-panel">
+			<h2>Characters</h2>
+			<div class="gallery" id="gallery">
+				<figure class="thumb">
+					<img src="assets/images/character.png" alt="Kaito" data-name="Kaito">
+					<figcaption>Kaito</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section id="music" class="panel music-panel">
+			<h2>Background Music</h2>
+			<p>Original soundtrack and ambient compositions for the story.</p>
+			<div class="audio-player">
+				<audio id="musicPlayer" controls preload="none">
+					<source src="assets/audio/Neon Shrine Rain.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+				<ul id="musicList" class="track-list">
+					<li data-src="assets/audio/Neon Shrine Rain.mp3">Main Theme</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="narration" class="panel narration-panel">
+			<h2>Audio Narration</h2>
+			<p>Professional voice narration of the story.</p>
+			<div class="audio-player">
+				<audio id="player" controls preload="none">
+					<source src="assets/audio/ElevenLabs_story_txt.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+				<ul id="trackList" class="track-list">
+					<li data-src="assets/audio/ElevenLabs_story_txt.mp3">Main Narration</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<div id="lightbox" class="lightbox" aria-hidden="true">
+		<button id="lbClose" class="lb-close">×</button>
+		<img id="lbImage" alt="" />
+		<p id="lbCaption"></p>
+	</div>
+
+	<footer class="site-footer">
+		<small>Made with ❤️ — replace placeholders with your assets.</small>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>
